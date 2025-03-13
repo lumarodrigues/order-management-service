@@ -2,6 +2,10 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from oms.models import Base
 import os
+from dotenv import load_dotenv
+
+
+load_dotenv()
 
 POSTGRES_DB_URL = os.getenv("POSTGRES_DB_URL")
 
